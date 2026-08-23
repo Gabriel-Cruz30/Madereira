@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madeira e Cia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Madeira e Cia</h1>
+        <p>Promoção de aniversário</p>
+
+        <form action="processa.php" method="POST">
+
+            <label for="txtNome">Nome do cliente:</label>
+            <input type="text" id="txtNome" name="txtNome" required>
+
+            <label for="txtValorCompra">Valor da compra:</label>
+            <input type="number" id="txtValorCompra" name="txtValorCompra" step="0.01" required>
+
+            <label for="cmbPag">Forma de pagamento:</label>
+            <select id="cmbPag" name="cmbPag" required>
+                <option value="">Selecione</option>
+                <option value="deposito">Depósito</option>
+                <option value="boleto">Boleto</option>
+                <option value="cartaoCredito">Cartão de crédito</option>
+            </select>
+
+            <button type="submit">Calcular desconto</button>
+
+        </form>
+    </div>
+
+</body>
+</html>
